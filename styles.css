@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 50px 0 0 50px;
+  display: flex;
+}
+
+.circle {
+  background: #e83a2e;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  position: relative;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    height: 50px;
+    width: 50px;
+  }
+
+  25% {
+    height: 50px;
+    width: 50px;
+  }
+
+  50% {
+    height: 55px;
+    width: 45px;
+    transform: translateY(-50px);
+  }
+
+  75% {
+    height: 50px;
+    width: 50px;
+  }
+
+  100% {
+    height: 45px;
+    width: 55px;
+    transform: translateY(0px);
+  }
+}
+
+.square {
+  background: #6bb370;
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  position: absolute;
+  animation: slide 3s infinite;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: inherit;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+
+.triangle {
+  margin: 20px;
+  border-style: solid;
+  border-color: transparent transparent #1e97d4 transparent;
+  border-width: 0 30px 50px 30px;
+  position: relative;
+  animation: zigzag 5s infinite;
+}
+
+@keyframes zigzag {
+  0% {
+    margin-left: 0%;
+    margin-top: 0;
+  }
+
+  25% {
+    margin-left: 25%;
+    margin-top: 100px;
+  }
+
+  50% {
+    margin-left: 0%;
+    margin-top: 200px;
+  }
+
+  75% {
+    margin-left: 25%;
+    margin-top: 300px;
+  }
+
+  100% {
+    margin-left: 0%;
+    margin-top: 400px;
+  }
+}
